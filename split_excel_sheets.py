@@ -43,7 +43,7 @@ def safe_shutdown(exit_code):
 
 
 if len(sys.argv) < 2:
-    error("Error: No arguments given. Provide a path to a folder with Excel files to merge.")
+    error("Error: No arguments given. Provide a path to an Excel file with multiple sheets.")
     safe_shutdown(1)
 
 this_file_path                  = os.path.realpath(__file__)
